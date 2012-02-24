@@ -33,8 +33,11 @@
     self.tableController.autoRefreshFromNetwork = YES;
     self.tableController.pullToRefreshEnabled = YES;
     self.tableController.resourcePath = @"/repos/RestKit/RestKit/issues";
+    self.tableController.variableHeightRows = YES;
     NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:NO];
     self.tableController.sortDescriptors = [NSArray arrayWithObject:descriptor];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"RKGHIssueCell" bundle:nil] forCellReuseIdentifier:@"RKGHIssue"];
     
     // TODO: Add a loading view...
     
@@ -46,9 +49,14 @@
      render the tableView.
      */
     RKTableViewCellMapping *cellMapping = [RKTableViewCellMapping cellMapping];
-    cellMapping.reuseIdentifier = @"RKGHIssueCell";
-    [cellMapping mapKeyPath:@"title" toAttribute:@"textLabel.text"];
-    [cellMapping mapKeyPath:@"body" toAttribute:@"detailTextLabel.text"];
+    cellMapping.cellClassName = @"RKGHIssueCell";
+    cellMapping.reuseIdentifier = @"RKGHIssue";
+    cellMapping.rowHeight = 100.0;
+    [cellMapping mapKeyPath:@"title" toAttribute:@"titleLabel.text"];
+    [cellMapping mapKeyPath:@"body" toAttribute:@"descriptionLabel.text"];
+    [cellMapping mapKeyPath:@"number" toAttribute:@"issueNumber"];
+    [cellMapping mapKeyPath:@"user.login" toAttribute:@"creatorName"];
+    [cellMapping mapKeyPath:@"createdAgo" toAttribute:@"createdAgo"];
     
     [tableController mapObjectsWithClass:[RKGHIssue class] toTableCellsWithMapping:cellMapping];
 }
