@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1170" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RKGHIssue" representedClassName="RKGHIssue" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="closedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="commentsNumber" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="htmlURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issueURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="assignee" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RKGHUser" inverseName="assignedIssues" inverseEntity="RKGHUser" syncable="YES"/>
+        <relationship name="milestone" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RKGHMilestone" inverseName="issues" inverseEntity="RKGHMilestone" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RKGHUser" inverseName="createdIssues" inverseEntity="RKGHUser" syncable="YES"/>
+    </entity>
+    <entity name="RKGHMilestone" representedClassName="RKGHMilestone" syncable="YES">
+        <attribute name="closedIssues" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="milestoneURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="openIssues" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="creator" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RKGHUser" inverseName="milestones" inverseEntity="RKGHUser" syncable="YES"/>
+        <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKGHIssue" inverseName="milestone" inverseEntity="RKGHIssue" syncable="YES"/>
+    </entity>
+    <entity name="RKGHUser" representedClassName="RKGHUser" syncable="YES">
+        <attribute name="avatarURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravatarID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="userURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assignedIssues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKGHIssue" inverseName="assignee" inverseEntity="RKGHIssue" syncable="YES"/>
+        <relationship name="createdIssues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKGHIssue" inverseName="user" inverseEntity="RKGHIssue" syncable="YES"/>
+        <relationship name="milestones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKGHMilestone" inverseName="creator" inverseEntity="RKGHMilestone" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RKGHIssue" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="RKGHMilestone" positionX="160" positionY="192" width="128" height="210"/>
+        <element name="RKGHUser" positionX="160" positionY="192" width="128" height="165"/>
+    </elements>
+</model>

@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25055BAC14F53EDA00B9C4DD /* RKGHMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055BAB14F53EDA00B9C4DD /* RKGHMenuTableViewController.m */; };
+		25055BC414F55FBA00B9C4DD /* RKGHIssuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055BC214F55FBA00B9C4DD /* RKGHIssuesTableViewController.m */; };
+		25055C1514F578D800B9C4DD /* RKGHIssueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C1414F578D800B9C4DD /* RKGHIssueTest.m */; };
+		25055C1714F5796A00B9C4DD /* GET_issues.json in Resources */ = {isa = PBXBuildFile; fileRef = 25055C1614F5796A00B9C4DD /* GET_issues.json */; };
+		25055C1B14F579E600B9C4DD /* RKGHIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C1A14F579E600B9C4DD /* RKGHIssue.m */; };
+		25055C1E14F57AEA00B9C4DD /* RKGHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C1D14F57AEA00B9C4DD /* RKGHUser.m */; };
+		25055C2114F57B0700B9C4DD /* RKGHMilestone.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2014F57B0700B9C4DD /* RKGHMilestone.m */; };
+		25055C2414F5CB6400B9C4DD /* RKGHUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2314F5CB6400B9C4DD /* RKGHUserTest.m */; };
+		25055C2614F5D14900B9C4DD /* GET_milestones.json in Resources */ = {isa = PBXBuildFile; fileRef = 25055C2514F5D14900B9C4DD /* GET_milestones.json */; };
+		25055C2814F5D16300B9C4DD /* RKGHMilestoneTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2714F5D16300B9C4DD /* RKGHMilestoneTest.m */; };
+		25055C2C14F5D66000B9C4DD /* RKGHMappingProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2B14F5D66000B9C4DD /* RKGHMappingProviderTest.m */; };
+		25055C3214F5E83A00B9C4DD /* RKGHIssueDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C3114F5E83900B9C4DD /* RKGHIssueDetailTableViewController.m */; };
+		25CA7AA214EC7D2700888FF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA114EC7D2700888FF8 /* UIKit.framework */; };
+		25CA7AA414EC7D2700888FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA314EC7D2700888FF8 /* Foundation.framework */; };
+		25CA7AA614EC7D2700888FF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA514EC7D2700888FF8 /* CoreGraphics.framework */; };
+		25CA7AA814EC7D2700888FF8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA714EC7D2700888FF8 /* CoreData.framework */; };
+		25CA7AC814EC7D2900888FF8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AC714EC7D2800888FF8 /* SenTestingKit.framework */; };
+		25CA7AC914EC7D2900888FF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA114EC7D2700888FF8 /* UIKit.framework */; };
+		25CA7ACA14EC7D2900888FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA314EC7D2700888FF8 /* Foundation.framework */; };
+		25CA7ACB14EC7D2900888FF8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA714EC7D2700888FF8 /* CoreData.framework */; };
+		25CA7AFC14ED698A00888FF8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AF314ED694400888FF8 /* libRestKit.a */; };
+		25CA7B0114ED69CA00888FF8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AFD14ED69CA00888FF8 /* CFNetwork.framework */; };
+		25CA7B0214ED69CA00888FF8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AFE14ED69CA00888FF8 /* MobileCoreServices.framework */; };
+		25CA7B0314ED69CA00888FF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AFF14ED69CA00888FF8 /* QuartzCore.framework */; };
+		25CA7B0414ED69CA00888FF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7B0014ED69CA00888FF8 /* SystemConfiguration.framework */; };
+		25CA7B0614ED69D000888FF8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7B0514ED69D000888FF8 /* Security.framework */; };
+		25CA7B2D14ED77C000888FF8 /* RKGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B1C14ED77AF00888FF8 /* RKGHAppDelegate.m */; };
+		25CA7B2F14ED78B100888FF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B1514ED77AF00888FF8 /* main.m */; };
+		25CA7B3014ED78E100888FF8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CA7B2214ED77AF00888FF8 /* MainStoryboard.storyboard */; };
+		25CA7B3114ED78E500888FF8 /* RKGithub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B2514ED77AF00888FF8 /* RKGithub.xcdatamodeld */; };
+		25CA7B3214ED78EA00888FF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25CA7B2014ED77AF00888FF8 /* InfoPlist.strings */; };
+		25CA7B3314ED7B1900888FF8 /* RKGHPullRequestsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B1914ED77AF00888FF8 /* RKGHPullRequestsTableViewController.m */; };
+		25CA7B3414ED7B1D00888FF8 /* RKGHPullRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B1714ED77AF00888FF8 /* RKGHPullRequestViewController.m */; };
+		25CA7B3714ED8BB200888FF8 /* GET_pulls.json in Resources */ = {isa = PBXBuildFile; fileRef = 25CA7B3614ED8BB200888FF8 /* GET_pulls.json */; };
+		25CA7B3B14ED8E5200888FF8 /* RKGHPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B3A14ED8E5200888FF8 /* RKGHPullRequest.m */; };
+		25CA7B3E14ED90AB00888FF8 /* RKGHMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B3D14ED90AA00888FF8 /* RKGHMappingProvider.m */; };
+		25CA7B4414EDA35E00888FF8 /* RKGHPullRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B4314EDA35E00888FF8 /* RKGHPullRequestTest.m */; };
+		25CA7B4A14EDAD4700888FF8 /* RKGHTestEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B4914EDAD4700888FF8 /* RKGHTestEnvironment.m */; };
+		25EC1A2214F6D63800C3CF3F /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1A14F6D63800C3CF3F /* blackArrow.png */; };
+		25EC1A2314F6D63800C3CF3F /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */; };
+		25EC1A2414F6D63800C3CF3F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1C14F6D63800C3CF3F /* blueArrow.png */; };
+		25EC1A2514F6D63800C3CF3F /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */; };
+		25EC1A2614F6D63800C3CF3F /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1E14F6D63800C3CF3F /* grayArrow.png */; };
+		25EC1A2714F6D63800C3CF3F /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */; };
+		25EC1A2814F6D63800C3CF3F /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A2014F6D63800C3CF3F /* whiteArrow.png */; };
+		25EC1A2914F6D63800C3CF3F /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25CA7ACC14EC7D2900888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7A9414EC7D2700888FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CA7A9C14EC7D2700888FF8;
+			remoteInfo = RKGithub;
+		};
+		25CA7AF214ED694400888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		25CA7AF414ED694400888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		25CA7AF614ED694400888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		25CA7AF814ED694400888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		25CA7AFA14ED695900888FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25055BAA14F53EDA00B9C4DD /* RKGHMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHMenuTableViewController.h; sourceTree = "<group>"; };
+		25055BAB14F53EDA00B9C4DD /* RKGHMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMenuTableViewController.m; sourceTree = "<group>"; };
+		25055BC114F55FB900B9C4DD /* RKGHIssuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHIssuesTableViewController.h; sourceTree = "<group>"; };
+		25055BC214F55FBA00B9C4DD /* RKGHIssuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssuesTableViewController.m; sourceTree = "<group>"; };
+		25055C1414F578D800B9C4DD /* RKGHIssueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssueTest.m; sourceTree = "<group>"; };
+		25055C1614F5796A00B9C4DD /* GET_issues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GET_issues.json; sourceTree = "<group>"; };
+		25055C1914F579E600B9C4DD /* RKGHIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHIssue.h; sourceTree = "<group>"; };
+		25055C1A14F579E600B9C4DD /* RKGHIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssue.m; sourceTree = "<group>"; };
+		25055C1C14F57AEA00B9C4DD /* RKGHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHUser.h; sourceTree = "<group>"; };
+		25055C1D14F57AEA00B9C4DD /* RKGHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHUser.m; sourceTree = "<group>"; };
+		25055C1F14F57B0700B9C4DD /* RKGHMilestone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHMilestone.h; sourceTree = "<group>"; };
+		25055C2014F57B0700B9C4DD /* RKGHMilestone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMilestone.m; sourceTree = "<group>"; };
+		25055C2314F5CB6400B9C4DD /* RKGHUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHUserTest.m; sourceTree = "<group>"; };
+		25055C2514F5D14900B9C4DD /* GET_milestones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GET_milestones.json; sourceTree = "<group>"; };
+		25055C2714F5D16300B9C4DD /* RKGHMilestoneTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMilestoneTest.m; sourceTree = "<group>"; };
+		25055C2B14F5D66000B9C4DD /* RKGHMappingProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMappingProviderTest.m; sourceTree = "<group>"; };
+		25055C3014F5E83900B9C4DD /* RKGHIssueDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHIssueDetailTableViewController.h; sourceTree = "<group>"; };
+		25055C3114F5E83900B9C4DD /* RKGHIssueDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssueDetailTableViewController.m; sourceTree = "<group>"; };
+		25CA7A9D14EC7D2700888FF8 /* RKGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CA7AA114EC7D2700888FF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25CA7AA314EC7D2700888FF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25CA7AA514EC7D2700888FF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25CA7AA714EC7D2700888FF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		25CA7AC614EC7D2800888FF8 /* RKGithubTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKGithubTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CA7AC714EC7D2800888FF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = Libraries/RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		25CA7AFD14ED69CA00888FF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		25CA7AFE14ED69CA00888FF8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		25CA7AFF14ED69CA00888FF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		25CA7B0014ED69CA00888FF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		25CA7B0514ED69D000888FF8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		25CA7B1514ED77AF00888FF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25CA7B1614ED77AF00888FF8 /* RKGHPullRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGHPullRequestViewController.h; sourceTree = "<group>"; };
+		25CA7B1714ED77AF00888FF8 /* RKGHPullRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGHPullRequestViewController.m; sourceTree = "<group>"; };
+		25CA7B1814ED77AF00888FF8 /* RKGHPullRequestsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGHPullRequestsTableViewController.h; sourceTree = "<group>"; };
+		25CA7B1914ED77AF00888FF8 /* RKGHPullRequestsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGHPullRequestsTableViewController.m; sourceTree = "<group>"; };
+		25CA7B1B14ED77AF00888FF8 /* RKGHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGHAppDelegate.h; sourceTree = "<group>"; };
+		25CA7B1C14ED77AF00888FF8 /* RKGHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGHAppDelegate.m; sourceTree = "<group>"; };
+		25CA7B1D14ED77AF00888FF8 /* RKGithub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKGithub-Prefix.pch"; sourceTree = "<group>"; };
+		25CA7B2114ED77AF00888FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25CA7B2314ED77AF00888FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		25CA7B2414ED77AF00888FF8 /* RKGithub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGithub-Info.plist"; sourceTree = "<group>"; };
+		25CA7B2614ED77AF00888FF8 /* RKGithub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKGithub.xcdatamodel; sourceTree = "<group>"; };
+		25CA7B2914ED77AF00888FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25CA7B2A14ED77AF00888FF8 /* RKGithubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGithubTests-Info.plist"; sourceTree = "<group>"; };
+		25CA7B3614ED8BB200888FF8 /* GET_pulls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GET_pulls.json; sourceTree = "<group>"; };
+		25CA7B3914ED8E5200888FF8 /* RKGHPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHPullRequest.h; sourceTree = "<group>"; };
+		25CA7B3A14ED8E5200888FF8 /* RKGHPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHPullRequest.m; sourceTree = "<group>"; };
+		25CA7B3C14ED90AA00888FF8 /* RKGHMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHMappingProvider.h; sourceTree = "<group>"; };
+		25CA7B3D14ED90AA00888FF8 /* RKGHMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMappingProvider.m; sourceTree = "<group>"; };
+		25CA7B4314EDA35E00888FF8 /* RKGHPullRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHPullRequestTest.m; sourceTree = "<group>"; };
+		25CA7B4814EDAD4700888FF8 /* RKGHTestEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHTestEnvironment.h; sourceTree = "<group>"; };
+		25CA7B4914EDAD4700888FF8 /* RKGHTestEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHTestEnvironment.m; sourceTree = "<group>"; };
+		25EC1A1A14F6D63800C3CF3F /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		25EC1A1C14F6D63800C3CF3F /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		25EC1A1E14F6D63800C3CF3F /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		25EC1A2014F6D63800C3CF3F /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25CA7A9A14EC7D2700888FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7B0614ED69D000888FF8 /* Security.framework in Frameworks */,
+				25CA7B0114ED69CA00888FF8 /* CFNetwork.framework in Frameworks */,
+				25CA7B0214ED69CA00888FF8 /* MobileCoreServices.framework in Frameworks */,
+				25CA7B0314ED69CA00888FF8 /* QuartzCore.framework in Frameworks */,
+				25CA7B0414ED69CA00888FF8 /* SystemConfiguration.framework in Frameworks */,
+				25CA7AFC14ED698A00888FF8 /* libRestKit.a in Frameworks */,
+				25CA7AA214EC7D2700888FF8 /* UIKit.framework in Frameworks */,
+				25CA7AA414EC7D2700888FF8 /* Foundation.framework in Frameworks */,
+				25CA7AA614EC7D2700888FF8 /* CoreGraphics.framework in Frameworks */,
+				25CA7AA814EC7D2700888FF8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA7AC214EC7D2800888FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7AC814EC7D2900888FF8 /* SenTestingKit.framework in Frameworks */,
+				25CA7AC914EC7D2900888FF8 /* UIKit.framework in Frameworks */,
+				25CA7ACA14EC7D2900888FF8 /* Foundation.framework in Frameworks */,
+				25CA7ACB14EC7D2900888FF8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25CA7A9214EC7D2700888FF8 = {
+			isa = PBXGroup;
+			children = (
+				25CA7B1314ED77AF00888FF8 /* Code */,
+				25CA7B1F14ED77AF00888FF8 /* Resources */,
+				25CA7B2714ED77AF00888FF8 /* Tests */,
+				25CA7AE614ED693600888FF8 /* Libraries */,
+				25CA7AA014EC7D2700888FF8 /* Frameworks */,
+				25CA7A9E14EC7D2700888FF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25CA7A9E14EC7D2700888FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7A9D14EC7D2700888FF8 /* RKGithub.app */,
+				25CA7AC614EC7D2800888FF8 /* RKGithubTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25CA7AA014EC7D2700888FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B0514ED69D000888FF8 /* Security.framework */,
+				25CA7AFD14ED69CA00888FF8 /* CFNetwork.framework */,
+				25CA7AFE14ED69CA00888FF8 /* MobileCoreServices.framework */,
+				25CA7AFF14ED69CA00888FF8 /* QuartzCore.framework */,
+				25CA7B0014ED69CA00888FF8 /* SystemConfiguration.framework */,
+				25CA7AA114EC7D2700888FF8 /* UIKit.framework */,
+				25CA7AA314EC7D2700888FF8 /* Foundation.framework */,
+				25CA7AA514EC7D2700888FF8 /* CoreGraphics.framework */,
+				25CA7AA714EC7D2700888FF8 /* CoreData.framework */,
+				25CA7AC714EC7D2800888FF8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25CA7AE614ED693600888FF8 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		25CA7AE914ED694400888FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7AF314ED694400888FF8 /* libRestKit.a */,
+				25CA7AF514ED694400888FF8 /* RestKitTests.octest */,
+				25CA7AF714ED694400888FF8 /* RestKit.framework */,
+				25CA7AF914ED694400888FF8 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25CA7B1314ED77AF00888FF8 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B1414ED77AF00888FF8 /* Controllers */,
+				25CA7B1A14ED77AF00888FF8 /* Models */,
+				25CA7B1E14ED77AF00888FF8 /* Views */,
+				25CA7B1514ED77AF00888FF8 /* main.m */,
+				25CA7B1D14ED77AF00888FF8 /* RKGithub-Prefix.pch */,
+				25CA7B1B14ED77AF00888FF8 /* RKGHAppDelegate.h */,
+				25CA7B1C14ED77AF00888FF8 /* RKGHAppDelegate.m */,
+				25CA7B3C14ED90AA00888FF8 /* RKGHMappingProvider.h */,
+				25CA7B3D14ED90AA00888FF8 /* RKGHMappingProvider.m */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		25CA7B1414ED77AF00888FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25055BAA14F53EDA00B9C4DD /* RKGHMenuTableViewController.h */,
+				25055BAB14F53EDA00B9C4DD /* RKGHMenuTableViewController.m */,
+				25055BC114F55FB900B9C4DD /* RKGHIssuesTableViewController.h */,
+				25055BC214F55FBA00B9C4DD /* RKGHIssuesTableViewController.m */,
+				25055C3014F5E83900B9C4DD /* RKGHIssueDetailTableViewController.h */,
+				25055C3114F5E83900B9C4DD /* RKGHIssueDetailTableViewController.m */,
+				25CA7B1814ED77AF00888FF8 /* RKGHPullRequestsTableViewController.h */,
+				25CA7B1914ED77AF00888FF8 /* RKGHPullRequestsTableViewController.m */,
+				25CA7B1614ED77AF00888FF8 /* RKGHPullRequestViewController.h */,
+				25CA7B1714ED77AF00888FF8 /* RKGHPullRequestViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		25CA7B1A14ED77AF00888FF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B3914ED8E5200888FF8 /* RKGHPullRequest.h */,
+				25CA7B3A14ED8E5200888FF8 /* RKGHPullRequest.m */,
+				25055C1914F579E600B9C4DD /* RKGHIssue.h */,
+				25055C1A14F579E600B9C4DD /* RKGHIssue.m */,
+				25055C1C14F57AEA00B9C4DD /* RKGHUser.h */,
+				25055C1D14F57AEA00B9C4DD /* RKGHUser.m */,
+				25055C1F14F57B0700B9C4DD /* RKGHMilestone.h */,
+				25055C2014F57B0700B9C4DD /* RKGHMilestone.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25CA7B1E14ED77AF00888FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25CA7B1F14ED77AF00888FF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25EC1A1914F6D63800C3CF3F /* Images */,
+				25CA7B2014ED77AF00888FF8 /* InfoPlist.strings */,
+				25CA7B2214ED77AF00888FF8 /* MainStoryboard.storyboard */,
+				25CA7B2414ED77AF00888FF8 /* RKGithub-Info.plist */,
+				25CA7B2514ED77AF00888FF8 /* RKGithub.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25CA7B2714ED77AF00888FF8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B3F14EDA32D00888FF8 /* Application */,
+				25CA7B4014EDA32D00888FF8 /* Logic */,
+				25CA7B3514ED8B7600888FF8 /* Fixtures */,
+				25CA7B2814ED77AF00888FF8 /* InfoPlist.strings */,
+				25CA7B2A14ED77AF00888FF8 /* RKGithubTests-Info.plist */,
+				25CA7B4814EDAD4700888FF8 /* RKGHTestEnvironment.h */,
+				25CA7B4914EDAD4700888FF8 /* RKGHTestEnvironment.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		25CA7B3514ED8B7600888FF8 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B3614ED8BB200888FF8 /* GET_pulls.json */,
+				25055C1614F5796A00B9C4DD /* GET_issues.json */,
+				25055C2514F5D14900B9C4DD /* GET_milestones.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		25CA7B3F14EDA32D00888FF8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		25CA7B4014EDA32D00888FF8 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B4114EDA32D00888FF8 /* Models */,
+				25055C2B14F5D66000B9C4DD /* RKGHMappingProviderTest.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		25CA7B4114EDA32D00888FF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25CA7B4314EDA35E00888FF8 /* RKGHPullRequestTest.m */,
+				25055C1414F578D800B9C4DD /* RKGHIssueTest.m */,
+				25055C2314F5CB6400B9C4DD /* RKGHUserTest.m */,
+				25055C2714F5D16300B9C4DD /* RKGHMilestoneTest.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25EC1A1914F6D63800C3CF3F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				25EC1A1A14F6D63800C3CF3F /* blackArrow.png */,
+				25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */,
+				25EC1A1C14F6D63800C3CF3F /* blueArrow.png */,
+				25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */,
+				25EC1A1E14F6D63800C3CF3F /* grayArrow.png */,
+				25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */,
+				25EC1A2014F6D63800C3CF3F /* whiteArrow.png */,
+				25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25CA7A9C14EC7D2700888FF8 /* RKGithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CA7AD914EC7D2900888FF8 /* Build configuration list for PBXNativeTarget "RKGithub" */;
+			buildPhases = (
+				25CA7A9914EC7D2700888FF8 /* Sources */,
+				25CA7A9A14EC7D2700888FF8 /* Frameworks */,
+				25CA7A9B14EC7D2700888FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CA7AFB14ED695900888FF8 /* PBXTargetDependency */,
+			);
+			name = RKGithub;
+			productName = RKGithub;
+			productReference = 25CA7A9D14EC7D2700888FF8 /* RKGithub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25CA7AC514EC7D2800888FF8 /* RKGithubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CA7ADC14EC7D2900888FF8 /* Build configuration list for PBXNativeTarget "RKGithubTests" */;
+			buildPhases = (
+				25CA7AC114EC7D2800888FF8 /* Sources */,
+				25CA7AC214EC7D2800888FF8 /* Frameworks */,
+				25CA7AC314EC7D2800888FF8 /* Resources */,
+				25CA7AC414EC7D2800888FF8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CA7ACD14EC7D2900888FF8 /* PBXTargetDependency */,
+			);
+			name = RKGithubTests;
+			productName = RKGithubTests;
+			productReference = 25CA7AC614EC7D2800888FF8 /* RKGithubTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25CA7A9414EC7D2700888FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = RestKit;
+			};
+			buildConfigurationList = 25CA7A9714EC7D2700888FF8 /* Build configuration list for PBXProject "RKGithub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25CA7A9214EC7D2700888FF8;
+			productRefGroup = 25CA7A9E14EC7D2700888FF8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25CA7AE914ED694400888FF8 /* Products */;
+					ProjectRef = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				25CA7A9C14EC7D2700888FF8 /* RKGithub */,
+				25CA7AC514EC7D2800888FF8 /* RKGithubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25CA7AF314ED694400888FF8 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 25CA7AF214ED694400888FF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25CA7AF514ED694400888FF8 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 25CA7AF414ED694400888FF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25CA7AF714ED694400888FF8 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 25CA7AF614ED694400888FF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25CA7AF914ED694400888FF8 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 25CA7AF814ED694400888FF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25CA7A9B14EC7D2700888FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7B3014ED78E100888FF8 /* MainStoryboard.storyboard in Resources */,
+				25CA7B3214ED78EA00888FF8 /* InfoPlist.strings in Resources */,
+				25EC1A2214F6D63800C3CF3F /* blackArrow.png in Resources */,
+				25EC1A2314F6D63800C3CF3F /* blackArrow@2x.png in Resources */,
+				25EC1A2414F6D63800C3CF3F /* blueArrow.png in Resources */,
+				25EC1A2514F6D63800C3CF3F /* blueArrow@2x.png in Resources */,
+				25EC1A2614F6D63800C3CF3F /* grayArrow.png in Resources */,
+				25EC1A2714F6D63800C3CF3F /* grayArrow@2x.png in Resources */,
+				25EC1A2814F6D63800C3CF3F /* whiteArrow.png in Resources */,
+				25EC1A2914F6D63800C3CF3F /* whiteArrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA7AC314EC7D2800888FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7B3714ED8BB200888FF8 /* GET_pulls.json in Resources */,
+				25055C1714F5796A00B9C4DD /* GET_issues.json in Resources */,
+				25055C2614F5D14900B9C4DD /* GET_milestones.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25CA7AC414EC7D2800888FF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25CA7A9914EC7D2700888FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7B2D14ED77C000888FF8 /* RKGHAppDelegate.m in Sources */,
+				25CA7B2F14ED78B100888FF8 /* main.m in Sources */,
+				25CA7B3114ED78E500888FF8 /* RKGithub.xcdatamodeld in Sources */,
+				25CA7B3314ED7B1900888FF8 /* RKGHPullRequestsTableViewController.m in Sources */,
+				25CA7B3414ED7B1D00888FF8 /* RKGHPullRequestViewController.m in Sources */,
+				25CA7B3B14ED8E5200888FF8 /* RKGHPullRequest.m in Sources */,
+				25CA7B3E14ED90AB00888FF8 /* RKGHMappingProvider.m in Sources */,
+				25055BAC14F53EDA00B9C4DD /* RKGHMenuTableViewController.m in Sources */,
+				25055BC414F55FBA00B9C4DD /* RKGHIssuesTableViewController.m in Sources */,
+				25055C1B14F579E600B9C4DD /* RKGHIssue.m in Sources */,
+				25055C1E14F57AEA00B9C4DD /* RKGHUser.m in Sources */,
+				25055C2114F57B0700B9C4DD /* RKGHMilestone.m in Sources */,
+				25055C3214F5E83A00B9C4DD /* RKGHIssueDetailTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CA7AC114EC7D2800888FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CA7B4414EDA35E00888FF8 /* RKGHPullRequestTest.m in Sources */,
+				25CA7B4A14EDAD4700888FF8 /* RKGHTestEnvironment.m in Sources */,
+				25055C1514F578D800B9C4DD /* RKGHIssueTest.m in Sources */,
+				25055C2414F5CB6400B9C4DD /* RKGHUserTest.m in Sources */,
+				25055C2814F5D16300B9C4DD /* RKGHMilestoneTest.m in Sources */,
+				25055C2C14F5D66000B9C4DD /* RKGHMappingProviderTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25CA7ACD14EC7D2900888FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CA7A9C14EC7D2700888FF8 /* RKGithub */;
+			targetProxy = 25CA7ACC14EC7D2900888FF8 /* PBXContainerItemProxy */;
+		};
+		25CA7AFB14ED695900888FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 25CA7AFA14ED695900888FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25CA7B2014ED77AF00888FF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25CA7B2114ED77AF00888FF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25CA7B2214ED77AF00888FF8 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25CA7B2314ED77AF00888FF8 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		25CA7B2814ED77AF00888FF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25CA7B2914ED77AF00888FF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25CA7AD714EC7D2900888FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25CA7AD814EC7D2900888FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25CA7ADA14EC7D2900888FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/RKGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Resources/RKGithub-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25CA7ADB14EC7D2900888FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/RKGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Resources/RKGithub-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		25CA7ADD14EC7D2900888FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RKGithub.app/RKGithub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/RKGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Tests/RKGithubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		25CA7ADE14EC7D2900888FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RKGithub.app/RKGithub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/RKGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Tests/RKGithubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25CA7A9714EC7D2700888FF8 /* Build configuration list for PBXProject "RKGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA7AD714EC7D2900888FF8 /* Debug */,
+				25CA7AD814EC7D2900888FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CA7AD914EC7D2900888FF8 /* Build configuration list for PBXNativeTarget "RKGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA7ADA14EC7D2900888FF8 /* Debug */,
+				25CA7ADB14EC7D2900888FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CA7ADC14EC7D2900888FF8 /* Build configuration list for PBXNativeTarget "RKGithubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CA7ADD14EC7D2900888FF8 /* Debug */,
+				25CA7ADE14EC7D2900888FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25CA7B2514ED77AF00888FF8 /* RKGithub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25CA7B2614ED77AF00888FF8 /* RKGithub.xcdatamodel */,
+			);
+			currentVersion = 25CA7B2614ED77AF00888FF8 /* RKGithub.xcdatamodel */;
+			path = RKGithub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25CA7A9414EC7D2700888FF8 /* Project object */;
+}
