@@ -33,6 +33,9 @@
     self.tableController.autoRefreshFromNetwork = YES;
     self.tableController.pullToRefreshEnabled = YES;
     self.tableController.resourcePath = @"/repos/RestKit/RestKit/issues";
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:NO];
+    self.tableController.sortDescriptors = [NSArray arrayWithObject:descriptor];
+    
     // TODO: Add a loading view...
     
     /**
