@@ -1,3 +1,6 @@
 [submodule "Libraries/RestKit"]
 	path = Libraries/RestKit
 	url = git://github.com/RestKit/RestKit.git
+[submodule "Libraries/DistanceOfTimeInWords"]
+	path = Libraries/DistanceOfTimeInWords
+	url = https://github.com/hoop33/DistanceOfTimeInWords.git
