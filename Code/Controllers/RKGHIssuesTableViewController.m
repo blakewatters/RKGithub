@@ -11,6 +11,7 @@
 #import "RKGHIssue.h"
 #import "RKGHIssuesTableViewController.h"
 #import "RKGHIssueDetailTableViewController.h"
+#import "RKGHLoadingView.h"
 
 @interface RKGHIssuesTableViewController ()
 @property (nonatomic, strong) RKFetchedResultsTableController *tableController;
@@ -27,8 +28,6 @@
     /**
      Configure the RestKit table controller to drive our view
      */
-    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
-    RKLogConfigureByName("RestKit/UI", RKLogLevelTrace);
     self.tableController = [[RKObjectManager sharedManager] fetchedResultsTableControllerForTableViewController:self];
     self.tableController.autoRefreshFromNetwork = YES;
     self.tableController.pullToRefreshEnabled = YES;
@@ -39,7 +38,21 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"RKGHIssueCell" bundle:nil] forCellReuseIdentifier:@"RKGHIssue"];
     
-    // TODO: Add a loading view...
+    /**
+     Configure the Pull to Refresh View
+     */
+    NSBundle *restKitResources = [NSBundle restKitResourcesBundle];
+    UIImage *arrowImage = [restKitResources imageWithContentsOfResource:@"blueArrow" withExtension:@"png"];
+    [[RKRefreshTriggerView appearance] setTitleFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13]];
+    [[RKRefreshTriggerView appearance] setLastUpdatedFont:[UIFont fontWithName:@"HelveticaNeue" size:11]];
+    [[RKRefreshTriggerView appearance] setArrowImage:arrowImage];
+    
+    /**
+     Configure a basic loading view
+     */
+    RKGHLoadingView *loadingView = [[RKGHLoadingView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    loadingView.center = self.tableView.center;
+    self.tableController.loadingView = loadingView;
     
     /**
      Configure our RKGHIssue -> UITableViewCell mappings. When RestKit loads the

@@ -45,14 +45,8 @@
 		25CA7B3E14ED90AB00888FF8 /* RKGHMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B3D14ED90AA00888FF8 /* RKGHMappingProvider.m */; };
 		25CA7B4414EDA35E00888FF8 /* RKGHPullRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B4314EDA35E00888FF8 /* RKGHPullRequestTest.m */; };
 		25CA7B4A14EDAD4700888FF8 /* RKGHTestEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7B4914EDAD4700888FF8 /* RKGHTestEnvironment.m */; };
-		25EC1A2214F6D63800C3CF3F /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1A14F6D63800C3CF3F /* blackArrow.png */; };
-		25EC1A2314F6D63800C3CF3F /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */; };
-		25EC1A2414F6D63800C3CF3F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1C14F6D63800C3CF3F /* blueArrow.png */; };
-		25EC1A2514F6D63800C3CF3F /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */; };
-		25EC1A2614F6D63800C3CF3F /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1E14F6D63800C3CF3F /* grayArrow.png */; };
-		25EC1A2714F6D63800C3CF3F /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */; };
-		25EC1A2814F6D63800C3CF3F /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A2014F6D63800C3CF3F /* whiteArrow.png */; };
-		25EC1A2914F6D63800C3CF3F /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */; };
+		25EC1B2614F8273A00C3CF3F /* RestKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1B2514F8273A00C3CF3F /* RestKitResources.bundle */; };
+		25EC1B3214F8453C00C3CF3F /* RKGHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC1B3114F8453C00C3CF3F /* RKGHLoadingView.m */; };
 		D3497A7D14F79CC1003B4794 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = D3497A7C14F79CC1003B4794 /* NSDate+Formatting.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D354A5AE14F7803B00AAA1CA /* RKGHIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D300B7DB14F77B7F0054A77B /* RKGHIssueCell.m */; };
 		D354A5AF14F7803E00AAA1CA /* RKGHIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D300B7DD14F77B8F0054A77B /* RKGHIssueCell.xib */; };
@@ -100,6 +94,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 25160D1514564E810060A5C5;
 			remoteInfo = RestKit;
+		};
+		25EC1B1614F807AC00C3CF3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25EC1AFE14F8078100C3CF3F;
+			remoteInfo = RestKitResources;
+		};
+		25EC1B1914F807AC00C3CF3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25EC1AFF14F8078100C3CF3F;
+			remoteInfo = RestKitResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -157,14 +165,9 @@
 		25CA7B4314EDA35E00888FF8 /* RKGHPullRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHPullRequestTest.m; sourceTree = "<group>"; };
 		25CA7B4814EDAD4700888FF8 /* RKGHTestEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHTestEnvironment.h; sourceTree = "<group>"; };
 		25CA7B4914EDAD4700888FF8 /* RKGHTestEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHTestEnvironment.m; sourceTree = "<group>"; };
-		25EC1A1A14F6D63800C3CF3F /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
-		25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
-		25EC1A1C14F6D63800C3CF3F /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
-		25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
-		25EC1A1E14F6D63800C3CF3F /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
-		25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
-		25EC1A2014F6D63800C3CF3F /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
-		25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		25EC1B2514F8273A00C3CF3F /* RestKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RestKitResources.bundle; path = ../Libraries/RestKit/RestKitResources.bundle; sourceTree = "<group>"; };
+		25EC1B3014F8453C00C3CF3F /* RKGHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHLoadingView.h; sourceTree = "<group>"; };
+		25EC1B3114F8453C00C3CF3F /* RKGHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHLoadingView.m; sourceTree = "<group>"; };
 		D300B7DA14F77B7F0054A77B /* RKGHIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHIssueCell.h; sourceTree = "<group>"; };
 		D300B7DB14F77B7F0054A77B /* RKGHIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssueCell.m; sourceTree = "<group>"; };
 		D300B7DD14F77B8F0054A77B /* RKGHIssueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKGHIssueCell.xib; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 				25CA7AF514ED694400888FF8 /* RestKitTests.octest */,
 				25CA7AF714ED694400888FF8 /* RestKit.framework */,
 				25CA7AF914ED694400888FF8 /* RestKitFrameworkTests.octest */,
+				25EC1B1A14F807AC00C3CF3F /* RestKitResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,7 +269,6 @@
 		25CA7B1314ED77AF00888FF8 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				D3497A6414F79942003B4794 /* Extensions */,
 				25CA7B1414ED77AF00888FF8 /* Controllers */,
 				25CA7B1A14ED77AF00888FF8 /* Models */,
 				25CA7B1E14ED77AF00888FF8 /* Views */,
@@ -317,6 +320,8 @@
 				D300B7DA14F77B7F0054A77B /* RKGHIssueCell.h */,
 				D300B7DB14F77B7F0054A77B /* RKGHIssueCell.m */,
 				D300B7DD14F77B8F0054A77B /* RKGHIssueCell.xib */,
+				25EC1B3014F8453C00C3CF3F /* RKGHLoadingView.h */,
+				25EC1B3114F8453C00C3CF3F /* RKGHLoadingView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,7 +329,7 @@
 		25CA7B1F14ED77AF00888FF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				25EC1A1914F6D63800C3CF3F /* Images */,
+				25EC1B2514F8273A00C3CF3F /* RestKitResources.bundle */,
 				25CA7B2014ED77AF00888FF8 /* InfoPlist.strings */,
 				25CA7B2214ED77AF00888FF8 /* MainStoryboard.storyboard */,
 				25CA7B2414ED77AF00888FF8 /* RKGithub-Info.plist */,
@@ -384,28 +389,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		25EC1A1914F6D63800C3CF3F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				25EC1A1A14F6D63800C3CF3F /* blackArrow.png */,
-				25EC1A1B14F6D63800C3CF3F /* blackArrow@2x.png */,
-				25EC1A1C14F6D63800C3CF3F /* blueArrow.png */,
-				25EC1A1D14F6D63800C3CF3F /* blueArrow@2x.png */,
-				25EC1A1E14F6D63800C3CF3F /* grayArrow.png */,
-				25EC1A1F14F6D63800C3CF3F /* grayArrow@2x.png */,
-				25EC1A2014F6D63800C3CF3F /* whiteArrow.png */,
-				25EC1A2114F6D63800C3CF3F /* whiteArrow@2x.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		D3497A6414F79942003B4794 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		D3497A7A14F79CB0003B4794 /* DistanceOfTimeInWords */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +412,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				25EC1B1714F807AC00C3CF3F /* PBXTargetDependency */,
 				25CA7AFB14ED695900888FF8 /* PBXTargetDependency */,
 			);
 			name = RKGithub;
@@ -517,6 +501,13 @@
 			remoteRef = 25CA7AF814ED694400888FF8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		25EC1B1A14F807AC00C3CF3F /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 25EC1B1914F807AC00C3CF3F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -524,16 +515,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EC1B2614F8273A00C3CF3F /* RestKitResources.bundle in Resources */,
 				25CA7B3014ED78E100888FF8 /* MainStoryboard.storyboard in Resources */,
 				25CA7B3214ED78EA00888FF8 /* InfoPlist.strings in Resources */,
-				25EC1A2214F6D63800C3CF3F /* blackArrow.png in Resources */,
-				25EC1A2314F6D63800C3CF3F /* blackArrow@2x.png in Resources */,
-				25EC1A2414F6D63800C3CF3F /* blueArrow.png in Resources */,
-				25EC1A2514F6D63800C3CF3F /* blueArrow@2x.png in Resources */,
-				25EC1A2614F6D63800C3CF3F /* grayArrow.png in Resources */,
-				25EC1A2714F6D63800C3CF3F /* grayArrow@2x.png in Resources */,
-				25EC1A2814F6D63800C3CF3F /* whiteArrow.png in Resources */,
-				25EC1A2914F6D63800C3CF3F /* whiteArrow@2x.png in Resources */,
 				D354A5AF14F7803E00AAA1CA /* RKGHIssueCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +570,7 @@
 				25055C3214F5E83A00B9C4DD /* RKGHIssueDetailTableViewController.m in Sources */,
 				D354A5AE14F7803B00AAA1CA /* RKGHIssueCell.m in Sources */,
 				D3497A7D14F79CC1003B4794 /* NSDate+Formatting.m in Sources */,
+				25EC1B3214F8453C00C3CF3F /* RKGHLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +599,11 @@
 			isa = PBXTargetDependency;
 			name = RestKit;
 			targetProxy = 25CA7AFA14ED695900888FF8 /* PBXContainerItemProxy */;
+		};
+		25EC1B1714F807AC00C3CF3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKitResources;
+			targetProxy = 25EC1B1614F807AC00C3CF3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
