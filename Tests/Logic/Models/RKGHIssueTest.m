@@ -52,43 +52,43 @@
 - (void)testMappingOfTitle {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"title" toKeyPath:@"title" withValue:@"Found a bug"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfURL {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"url" toKeyPath:@"issueURLString" withValue:@"https://api.github.com/repos/octocat/Hello-World/issues/1"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfHtmlURL {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"html_url" toKeyPath:@"htmlURLString" withValue:@"https://github.com/octocat/Hello-World/issues/1"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfNumber {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"number" toKeyPath:@"number" withValue:[NSNumber numberWithInt:1347]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfState {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"state" toKeyPath:@"state" withValue:@"open"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfBody {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"body" toKeyPath:@"body" withValue:@"I'm having a problem with this."];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfCommentsNumber {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"comments" toKeyPath:@"commentsNumber" withValue:[NSNumber numberWithInt:0]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfClosedAt {
@@ -102,7 +102,7 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];    
     NSDate *createdAt = [dateFormatter dateFromString:@"2011-04-22 13:33:48 +0000"];
     [mappingTest expectMappingFromKeyPath:@"created_at" toKeyPath:@"createdAt" withValue:createdAt];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfUpdatedAt {
@@ -110,7 +110,7 @@
     [mappingTest expectMappingFromKeyPath:@"updated_at" toKeyPath:@"updatedAt" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [[(NSDate *)value description] isEqualToString:@"2011-04-22 13:33:48 +0000"];
     }];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 #pragma mark Relationship Mappings
@@ -120,7 +120,7 @@
     [mappingTest expectMappingFromKeyPath:@"user" toKeyPath:@"user" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [value isKindOfClass:[RKGHUser class]] && [[value login] isEqualToString:@"octocat"];
     }];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfAssignee {
@@ -128,7 +128,7 @@
     [mappingTest expectMappingFromKeyPath:@"assignee" toKeyPath:@"assignee" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [value isKindOfClass:[RKGHUser class]] && [[value login] isEqualToString:@"octocat"];
     }];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfMilestone {
@@ -136,7 +136,7 @@
     [mappingTest expectMappingFromKeyPath:@"milestone" toKeyPath:@"milestone" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [value isKindOfClass:[RKGHMilestone class]] && [[value title] isEqualToString:@"v1.0"];
     }];
-    [mappingTest verify];    
+    STAssertNoThrow([mappingTest verify], nil);    
 }
 
 #pragma mark - Convenience Accessors

@@ -52,35 +52,35 @@
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"login" toKeyPath:@"login" withValue:@"octocat"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfUserID
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"id" toKeyPath:@"userID" withValue:[NSNumber numberWithInt:1]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfAvatarURLString
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"avatar_url" toKeyPath:@"avatarURLString" withValue:@"https://github.com/images/error/octocat_happy.gif"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfGravatarID
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"gravatar_id" toKeyPath:@"gravatarID" withValue:@"somehexcode"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfUserURLString
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"url" toKeyPath:@"userURLString" withValue:@"https://api.github.com/users/octocat"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 #pragma mark - Helper Methods

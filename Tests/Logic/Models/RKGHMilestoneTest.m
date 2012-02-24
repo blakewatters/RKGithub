@@ -51,48 +51,48 @@
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"title" toKeyPath:@"title" withValue:@"v1.0"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfURL
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"url" toKeyPath:@"milestoneURLString" withValue:@"https://api.github.com/repos/octocat/Hello-World/milestones/1"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfNumber
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"number" toKeyPath:@"number" withValue:[NSNumber numberWithInt:1]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfState
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"state" toKeyPath:@"state" withValue:@"open"];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfDescription
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"description" toKeyPath:@"descriptionText" withValue:@""];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfOpenIssues
 {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"open_issues" toKeyPath:@"openIssues" withValue:[NSNumber numberWithInt:4]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfClosedIssues {
     RKMappingTest *mappingTest = [self mappingTest];
     [mappingTest expectMappingFromKeyPath:@"closed_issues" toKeyPath:@"closedIssues" withValue:[NSNumber numberWithInt:8]];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfDueOn
@@ -108,7 +108,7 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];    
     NSDate *createdAt = [dateFormatter dateFromString:@"2011-04-22 13:33:48 +0000"];
     [mappingTest expectMappingFromKeyPath:@"created_at" toKeyPath:@"createdAt" withValue:createdAt];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 #pragma mark Relationship Mappings
@@ -119,7 +119,7 @@
     [mappingTest expectMappingFromKeyPath:@"creator" toKeyPath:@"creator" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [value isKindOfClass:[RKGHUser class]] && [[value login] isEqualToString:@"octocat"];
     }];
-    [mappingTest verify];
+    STAssertNoThrow([mappingTest verify], nil);
 }
 
 - (void)testMappingOfIssues
