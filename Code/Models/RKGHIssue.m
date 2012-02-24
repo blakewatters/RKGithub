@@ -7,6 +7,7 @@
 //
 
 #import "RKGHIssue.h"
+#import "NSDate+Formatting.h"
 
 @implementation RKGHIssue
 
@@ -34,6 +35,10 @@
 
 - (NSUInteger)commentsCount {
     return [self.commentsNumber integerValue];
+}
+
+- (NSString *)createdAgo {
+    return [self.createdAt distanceOfTimeInWords];
 }
 
 @end

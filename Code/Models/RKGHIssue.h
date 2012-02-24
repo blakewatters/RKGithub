@@ -27,6 +27,7 @@
 @property (nonatomic, readonly) NSURL *htmlURL;
 @property (nonatomic, readonly) NSURL *issueURL;
 @property (nonatomic, readonly) NSUInteger commentsCount;
+@property (nonatomic, readonly) NSString *createdAgo;
 
 // Relationships
 @property (nonatomic, strong) RKGHUser *user;
