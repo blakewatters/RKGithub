@@ -19,6 +19,9 @@
 		25055C2814F5D16300B9C4DD /* RKGHMilestoneTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2714F5D16300B9C4DD /* RKGHMilestoneTest.m */; };
 		25055C2C14F5D66000B9C4DD /* RKGHMappingProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C2B14F5D66000B9C4DD /* RKGHMappingProviderTest.m */; };
 		25055C3214F5E83A00B9C4DD /* RKGHIssueDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25055C3114F5E83900B9C4DD /* RKGHIssueDetailTableViewController.m */; };
+		25BE939414F9788C008BC1C0 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BE939114F9788C008BC1C0 /* empty.png */; };
+		25BE939514F9788C008BC1C0 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BE939214F9788C008BC1C0 /* error.png */; };
+		25BE939614F9788C008BC1C0 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BE939314F9788C008BC1C0 /* offline.png */; };
 		25CA7AA214EC7D2700888FF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA114EC7D2700888FF8 /* UIKit.framework */; };
 		25CA7AA414EC7D2700888FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA314EC7D2700888FF8 /* Foundation.framework */; };
 		25CA7AA614EC7D2700888FF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA7AA514EC7D2700888FF8 /* CoreGraphics.framework */; };
@@ -130,6 +133,9 @@
 		25055C2B14F5D66000B9C4DD /* RKGHMappingProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHMappingProviderTest.m; sourceTree = "<group>"; };
 		25055C3014F5E83900B9C4DD /* RKGHIssueDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGHIssueDetailTableViewController.h; sourceTree = "<group>"; };
 		25055C3114F5E83900B9C4DD /* RKGHIssueDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGHIssueDetailTableViewController.m; sourceTree = "<group>"; };
+		25BE939114F9788C008BC1C0 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		25BE939214F9788C008BC1C0 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		25BE939314F9788C008BC1C0 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
 		25CA7A9D14EC7D2700888FF8 /* RKGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CA7AA114EC7D2700888FF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		25CA7AA314EC7D2700888FF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -207,6 +213,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25BE939014F9788C008BC1C0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				25BE939114F9788C008BC1C0 /* empty.png */,
+				25BE939214F9788C008BC1C0 /* error.png */,
+				25BE939314F9788C008BC1C0 /* offline.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		25CA7A9214EC7D2700888FF8 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +345,7 @@
 		25CA7B1F14ED77AF00888FF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25BE939014F9788C008BC1C0 /* Images */,
 				25EC1B2514F8273A00C3CF3F /* RestKitResources.bundle */,
 				25CA7B2014ED77AF00888FF8 /* InfoPlist.strings */,
 				25CA7B2214ED77AF00888FF8 /* MainStoryboard.storyboard */,
@@ -519,6 +536,9 @@
 				25CA7B3014ED78E100888FF8 /* MainStoryboard.storyboard in Resources */,
 				25CA7B3214ED78EA00888FF8 /* InfoPlist.strings in Resources */,
 				D354A5AF14F7803E00AAA1CA /* RKGHIssueCell.xib in Resources */,
+				25BE939414F9788C008BC1C0 /* empty.png in Resources */,
+				25BE939514F9788C008BC1C0 /* error.png in Resources */,
+				25BE939614F9788C008BC1C0 /* offline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

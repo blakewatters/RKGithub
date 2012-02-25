@@ -36,8 +36,6 @@
     NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:NO];
     self.tableController.sortDescriptors = [NSArray arrayWithObject:descriptor];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"RKGHIssueCell" bundle:nil] forCellReuseIdentifier:@"RKGHIssue"];
-    
     /**
      Configure the Pull to Refresh View
      */
@@ -53,6 +51,13 @@
     RKGHLoadingView *loadingView = [[RKGHLoadingView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
     loadingView.center = self.tableView.center;
     self.tableController.loadingView = loadingView;
+    
+    /**
+     Setup some images for various table states
+     */
+    self.tableController.imageForOffline = [UIImage imageNamed:@"offline.png"];
+    self.tableController.imageForError = [UIImage imageNamed:@"error.png"];
+    self.tableController.imageForEmpty = [UIImage imageNamed:@"empty.png"];
     
     /**
      Configure our RKGHIssue -> UITableViewCell mappings. When RestKit loads the
@@ -72,6 +77,11 @@
     [cellMapping mapKeyPath:@"createdAgo" toAttribute:@"createdAgo"];
     
     [tableController mapObjectsWithClass:[RKGHIssue class] toTableCellsWithMapping:cellMapping];
+    
+    /**
+     Use a custom Nib to draw our table cells for RKGHIssue objects
+     */
+    [self.tableView registerNib:[UINib nibWithNibName:@"RKGHIssueCell" bundle:nil] forCellReuseIdentifier:@"RKGHIssue"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
