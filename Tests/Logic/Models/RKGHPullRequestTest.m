@@ -21,18 +21,20 @@
 
 @implementation RKGHPullRequestTest
 
-- (void)setUp {
+- (void)setUp
+{
     [RKTestFactory setUp];
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     [RKTestFactory tearDown];
 }
 
 #pragma mark - RKGHPullRequest Object Mapping
 
-- (void)testMappingOfTitle {
-    // TODO: Factor all of this up
+- (void)testMappingOfTitle
+{
     id fixtureData = [RKTestFixture parsedObjectWithContentsOfFixture:@"GET_pulls.json"];
     RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
     
@@ -41,7 +43,7 @@
     
     RKMappingTest *test = [RKMappingTest testForMapping:mapping object:fixtureData];
     [test expectMappingFromKeyPath:@"title" toKeyPath:@"title" withValue:@"new-feature"];
-    [test verify];
+    STAssertNoThrow([test verify], nil);
 }
 
 @end

@@ -11,7 +11,8 @@
 
 @implementation RKTestFactory (RKGithub)
 
-- (void)didInitialize {    
+- (void)didInitialize
+{
     /*
      Configure the RestKit test fixture support to load fixtures from the bundle
      containing the RKGithub Test Cases

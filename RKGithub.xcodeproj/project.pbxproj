@@ -98,13 +98,6 @@
 			remoteGlobalIDString = 25160D1514564E810060A5C5;
 			remoteInfo = RestKit;
 		};
-		25EC1B1614F807AC00C3CF3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 25EC1AFE14F8078100C3CF3F;
-			remoteInfo = RestKitResources;
-		};
 		25EC1B1914F807AC00C3CF3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 25CA7AE814ED694400888FF8 /* RestKit.xcodeproj */;
@@ -429,7 +422,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				25EC1B1714F807AC00C3CF3F /* PBXTargetDependency */,
 				25CA7AFB14ED695900888FF8 /* PBXTargetDependency */,
 			);
 			name = RKGithub;
@@ -619,11 +611,6 @@
 			isa = PBXTargetDependency;
 			name = RestKit;
 			targetProxy = 25CA7AFA14ED695900888FF8 /* PBXContainerItemProxy */;
-		};
-		25EC1B1714F807AC00C3CF3F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RestKitResources;
-			targetProxy = 25EC1B1614F807AC00C3CF3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

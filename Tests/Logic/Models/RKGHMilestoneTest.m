@@ -42,57 +42,45 @@
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKManagedObjectMapping *mapping = [mappingProvider milestoneObjectMapping];
     
-    return [RKMappingTest testForMapping:mapping object:fixtureData];
+    RKMappingTest *mappingTest = [RKMappingTest testForMapping:mapping object:fixtureData];
+    mappingTest.verifiesOnExpect = YES;
+    return mappingTest;
 }
 
 #pragma mark Attribute Mappings
 
 - (void)testMappingOfTitle
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"title" toKeyPath:@"title" withValue:@"v1.0"];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"title" toKeyPath:@"title" withValue:@"v1.0"], nil);
 }
 
 - (void)testMappingOfURL
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"url" toKeyPath:@"milestoneURLString" withValue:@"https://api.github.com/repos/octocat/Hello-World/milestones/1"];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"url" toKeyPath:@"milestoneURLString" withValue:@"https://api.github.com/repos/octocat/Hello-World/milestones/1"], nil);
 }
 
 - (void)testMappingOfNumber
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"number" toKeyPath:@"number" withValue:[NSNumber numberWithInt:1]];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"number" toKeyPath:@"number" withValue:[NSNumber numberWithInt:1]], nil);
 }
 
 - (void)testMappingOfState
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"state" toKeyPath:@"state" withValue:@"open"];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"state" toKeyPath:@"state" withValue:@"open"], nil);
 }
 
 - (void)testMappingOfDescription
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"description" toKeyPath:@"descriptionText" withValue:@""];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"description" toKeyPath:@"descriptionText" withValue:@""], nil);
 }
 
 - (void)testMappingOfOpenIssues
 {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"open_issues" toKeyPath:@"openIssues" withValue:[NSNumber numberWithInt:4]];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"open_issues" toKeyPath:@"openIssues" withValue:[NSNumber numberWithInt:4]], nil);
 }
 
 - (void)testMappingOfClosedIssues {
-    RKMappingTest *mappingTest = [self mappingTest];
-    [mappingTest expectMappingFromKeyPath:@"closed_issues" toKeyPath:@"closedIssues" withValue:[NSNumber numberWithInt:8]];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"closed_issues" toKeyPath:@"closedIssues" withValue:[NSNumber numberWithInt:8]], nil);
 }
 
 - (void)testMappingOfDueOn
@@ -104,11 +92,9 @@
 
 - (void)testMappingOfCreatedAt
 {
-    RKMappingTest *mappingTest = [self mappingTest];
     NSDateFormatter *dateFormatter = [NSDateFormatter new];    
     NSDate *createdAt = [dateFormatter dateFromString:@"2011-04-22 13:33:48 +0000"];
-    [mappingTest expectMappingFromKeyPath:@"created_at" toKeyPath:@"createdAt" withValue:createdAt];
-    STAssertNoThrow([mappingTest verify], nil);
+    STAssertNoThrow([[self mappingTest] expectMappingFromKeyPath:@"created_at" toKeyPath:@"createdAt" withValue:createdAt], nil);
 }
 
 #pragma mark Relationship Mappings
@@ -127,7 +113,8 @@
     // Not mapped as nested...
 }
 
-- (void)testMilestoneURL {
+- (void)testMilestoneURL
+{
     [RKTestFactory objectStore];
     RKGHMilestone *milestone = [RKGHMilestone createEntity];
     milestone.milestoneURLString = @"https://api.github.com/repos/octocat/Hello-World/milestones/1";
