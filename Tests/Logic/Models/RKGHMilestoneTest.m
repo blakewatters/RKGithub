@@ -37,7 +37,7 @@
 - (RKMappingTest *)mappingTest
 {
     id fixtureData = [RKTestFixture parsedObjectWithContentsOfFixture:@"GET_milestones.json"];
-    RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKManagedObjectMapping *mapping = [mappingProvider milestoneObjectMapping];
@@ -115,7 +115,7 @@
 
 - (void)testMilestoneURL
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHMilestone *milestone = [RKGHMilestone createEntity];
     milestone.milestoneURLString = @"https://api.github.com/repos/octocat/Hello-World/milestones/1";
     STAssertEqualObjects([NSURL URLWithString:@"https://api.github.com/repos/octocat/Hello-World/milestones/1"], milestone.milestoneURL, nil);

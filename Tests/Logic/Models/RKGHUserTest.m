@@ -38,7 +38,7 @@
 {
     id fixtureData = [RKTestFixture parsedObjectWithContentsOfFixture:@"GET_issues.json"];
     NSDictionary *userData = [fixtureData valueForKey:@"user"];
-    RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKManagedObjectMapping *mapping = [mappingProvider userObjectMapping];
@@ -87,7 +87,7 @@
 
 - (void)testAvatarURL
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHUser *user = [RKGHUser createEntity];
     user.avatarURLString = @"https://github.com/images/error/octocat_happy.gif";
     STAssertEqualObjects([NSURL URLWithString:@"https://github.com/images/error/octocat_happy.gif"], user.avatarURL, nil);
@@ -95,7 +95,7 @@
 
 - (void)testUserURL
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHUser *user = [RKGHUser createEntity];
     user.userURLString = @"https://api.github.com/users/octocat";
     STAssertEqualObjects([NSURL URLWithString:@"https://api.github.com/users/octocat"], user.userURL, nil);

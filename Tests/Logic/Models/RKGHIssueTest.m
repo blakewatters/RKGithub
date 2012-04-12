@@ -39,7 +39,7 @@
 - (RKMappingTest *)mappingTest
 {
     id fixtureData = [RKTestFixture parsedObjectWithContentsOfFixture:@"GET_issues.json"];
-    RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKObjectMapping *mapping = (RKObjectMapping *) [mappingProvider issueObjectMapping];
@@ -141,7 +141,7 @@
 
 - (void)testCommentsCountReturnsValueOfCommentsNumber
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHIssue *issue = [RKGHIssue createEntity];
     issue.commentsNumber = [NSNumber numberWithInt:1234];
     NSUInteger count = 1234;
@@ -150,7 +150,7 @@
 
 - (void)testHtmlURLReturnsValueOfHtmlURLString
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHIssue *issue = [RKGHIssue createEntity];
     issue.htmlURLString = @"http://restkit.org/";
     STAssertEqualObjects([NSURL URLWithString:@"http://restkit.org/"], issue.htmlURL, nil);
@@ -158,7 +158,7 @@
 
 - (void)testIssueURLReturnsValueOfIssueURLString
 {
-    [RKTestFactory objectStore];
+    [RKTestFactory managedObjectStore];
     RKGHIssue *issue = [RKGHIssue createEntity];
     issue.issueURLString = @"http://restkit.org/";
     STAssertEqualObjects([NSURL URLWithString:@"http://restkit.org/"], issue.issueURL, nil);

@@ -35,7 +35,7 @@
 
 - (void)testLoadingOfIssues
 {
-    RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKTestResponseLoader *responseLoader = [RKTestResponseLoader responseLoader];
     RKURL *URL = [[RKTestFactory baseURL] URLByAppendingResourcePath:@"/repos/RestKit/RestKit/issues"];

@@ -36,7 +36,7 @@
 - (void)testMappingOfTitle
 {
     id fixtureData = [RKTestFixture parsedObjectWithContentsOfFixture:@"GET_pulls.json"];
-    RKManagedObjectStore *objectStore = [RKTestFactory objectStore];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     
     RKGHMappingProvider *mappingProvider = [RKGHMappingProvider mappingProviderWithObjectStore:objectStore];
     RKObjectMapping *mapping = (RKObjectMapping *) [mappingProvider pullRequestObjectMapping];
